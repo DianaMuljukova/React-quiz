@@ -54,7 +54,7 @@ class Auth extends Component {
 
     registerHandler = () => {
         this.props.auth(
-            this.state.function.email.value,
+            this.state.formControls.email.value,
             this.state.formControls.password.value,
             false
         );
@@ -163,4 +163,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(null, mapDispatchToProps) (Auth);
+export default connect(null, mapDispatchToProps)(Auth);
